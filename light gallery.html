@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+	
+        <script src="js/lightgallery.js"></script>
+        <script src="js/lg-pager.js"></script>
+        <script src="js/lg-autoplay.js"></script>
+        <script src="js/lg-fullscreen.js"></script>
+        <script src="js/lg-zoom.js"></script>
+        <script src="js/lg-hash.js"></script>
+        <script src="js/lg-share.js"></script>
+        <script src="js/lg-thumbnail.js"></script>
+        <script src="js/lg-video.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="js/lg-pager.min.js"></script>
+        <script src="js/lg-autoplay.min.js"></script>
+        <script src="js/lg-fullscreen.min.js"></script>
+        <script src="js/lg-zoom.min.js"></script>
+        <script src="js/lg-hash.min.js"></script>
+        <script src="js/lg-share.min.js"></script>
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/lg-video.min.js"></script>
+<link rel="stylesheet" href="./assets/css/styles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/Pretty-Footer.css"><link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+
+
+	<title>media</title>
+
+	<style>
+	body{
+                background-color: #152836
+            }
+            .demo-gallery > ul {
+                margin-bottom: 0;
+            }
+            .demo-gallery > ul > li {
+                float: left;
+                margin-bottom: 15px;
+                margin-right: 20px;
+                width: 200px;
+            }
+            .demo-gallery > ul > li a {
+                border: 3px solid #FFF;
+                border-radius: 3px;
+                display: block;
+                overflow: hidden;
+                position: relative;
+                float: left;
+            }
+            .demo-gallery > ul > li a > img {
+                -webkit-transition: -webkit-transform 0.15s ease 0s;
+                -moz-transition: -moz-transform 0.15s ease 0s;
+                -o-transition: -o-transform 0.15s ease 0s;
+                transition: transform 0.15s ease 0s;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                height: 100%;
+                width: 100%;
+            }
+            .demo-gallery > ul > li a:hover > img {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+                opacity: 1;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster {
+                background-color: rgba(0, 0, 0, 0.1);
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                -webkit-transition: background-color 0.15s ease 0s;
+                -o-transition: background-color 0.15s ease 0s;
+                transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery > ul > li a .demo-gallery-poster > img {
+                left: 50%;
+                margin-left: -10px;
+                margin-top: -10px;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                -webkit-transition: opacity 0.3s ease 0s;
+                -o-transition: opacity 0.3s ease 0s;
+                transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery > ul > li a:hover .demo-gallery-poster {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .justified-gallery > a > img {
+                -webkit-transition: -webkit-transform 0.15s ease 0s;
+                -moz-transition: -moz-transform 0.15s ease 0s;
+                -o-transition: -o-transform 0.15s ease 0s;
+                transition: transform 0.15s ease 0s;
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+                height: 100%;
+                width: 100%;
+            }
+            .demo-gallery .justified-gallery > a:hover > img {
+                -webkit-transform: scale3d(1.1, 1.1, 1.1);
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+                opacity: 1;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster {
+                background-color: rgba(0, 0, 0, 0.1);
+                bottom: 0;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 0;
+                -webkit-transition: background-color 0.15s ease 0s;
+                -o-transition: background-color 0.15s ease 0s;
+                transition: background-color 0.15s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+                left: 50%;
+                margin-left: -10px;
+                margin-top: -10px;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                -webkit-transition: opacity 0.3s ease 0s;
+                -o-transition: opacity 0.3s ease 0s;
+                transition: opacity 0.3s ease 0s;
+            }
+            .demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            .demo-gallery .video .demo-gallery-poster img {
+                height: 48px;
+                margin-left: -24px;
+                margin-top: -24px;
+                opacity: 0.8;
+                width: 48px;
+            }
+            .demo-gallery.dark > ul > li a {
+                border: 3px solid #04070a;
+            }
+            .home .demo-gallery {
+                padding-bottom: 80px;
+            }
+        </style>
+</head>
+<body class="home ">
+	<div class="parallax">
+	<div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-3">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img  class="logo" src="img\CR5.jpg" ></a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-3">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+        <li><a href="#EVENT">EVENT</a></li>
+        <li><a href="#GALLERY">GALLERY</a></li>
+        <li><a href="#CONTACT">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="light gallery.html">Media</a></li> 
+          </ul>
+        </li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="#nav-collapse3" aria-expanded="false" aria-controls="nav-collapse3">Search</a>
+            </li>
+          </ul>
+          <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse3">
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+              <button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </form>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</div>
+
+<div class="container-fluid" style="
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20;
+    padding-top: 80px;
+    border-top-width: 10;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;">
+        <div class="demo-gallery ">
+            <ul id="lightgallery" class="list-unstyled row">
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/1-375.jpg 375, img/1-480.jpg 480, img/1.jpg 800" data-src="img/1-1600.jpg"  data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/thumb-1.jpg" alt="Thumb-1">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/2-375.jpg 375, img/2-480.jpg 480, img/2.jpg 800" data-src="img/2-1600.jpg"  data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/thumb-2.jpg" alt="Thumb-2">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/media3.jpeg 375, media3.jpeg 480, img/media3.jpeg" data-src="img/media3.jpeg"  data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/media3-thumb.jpeg" alt="Thumb-3">
+                    </a>
+                </li>
+                <li class="col-xs-6 col-sm-4 col-md-3" data-responsive="img/media4.jpeg375, img/media4.jpeg 480, img/media4.jpeg 800" data-src="img/media4.jpeg"  data-pinterest-text="Pin it1" data-tweet-text="share on twitter 1">
+                    <a href="">
+                        <img class="img-responsive" src="img/media4-thumb.jpeg" alt="Thumb-4">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid " id="CONTACT">
+        <footer>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 col-sm-6 footer-navigation">
+                    <h3><a href="https://www.facebook.com/mukesh.dubey.39982">Mukesh<span>Dubey </span></a></h3>
+                    <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                    <p
+                    class="company-name">Dream Fashion House © 2017 </p>
+                </div>
+                <div class="col-xs-12 col-md-4 col-sm-6 footer-contacts">
+                    <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
+                        <p><span class="new-line-span">New Delhi,</span> Delhi,India</p>
+                    </div>
+                    <div><i class="fa fa-phone footer-contacts-icon"></i>
+                        <p class="footer-center-info email text-left"> +91 8447502048</p>
+                    </div>
+                    <div><i class="fa fa-envelope footer-contacts-icon"></i>
+                        <p> <a href="#">Dreamfashionhouse.com@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="clearfix visible-sm-block"></div>
+                <div class="col-xs-12 col-md-4 col-sm-6 footer-about">
+                    <h4>About the company</h4>
+                    <p> Dream Fashion House is an India based firm that represents style and quality by providing opportunities to young talent. Founded in Delhi  by Mukesh Dubey.
+                    </p>
+                    <div class="social-links social-icons">
+                        <a href="https://www.facebook.com/thedreamfashionhouse"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="https://www.instagram.com/thedreamfashionhouse"><i class="fa fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+   <script>
+            lightGallery(document.getElementById('lightgallery'));
+        </script>
+
+</body>
+</html>
